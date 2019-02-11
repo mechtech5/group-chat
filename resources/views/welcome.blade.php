@@ -71,8 +71,9 @@
       // Enable pusher logging - don't include this in production
       // Pusher.logToConsole = true;
 
-      var pusher = new Pusher('PUSHER_API_KEY', {
-        encrypted: true
+      var pusher = new Pusher('ce42fc6b8399c0e976a3', {
+        cluster: 'ap2',
+        forceTLS: true
       });
 
       // Subscribe to the channel we specified in our Laravel Event
